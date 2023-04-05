@@ -1,0 +1,24 @@
+
+
+<div class="controlpanel">
+    <h1>Attemps: <span data-function="attempts">{{attemps}}</span></h1>
+    <input type="number" placeholder="Insert Num of files" [(ngModel)]="maxFiles">
+    <input type="number" placeholder="Insert Num of Columns" [(ngModel)]="maxColumns">
+    <button class="controlpanel__start"(click)="start()">Start</button>
+    <button class="controlpanel__reset"(click)="reset()">Reset</button>
+</div>    
+   
+    <div class="game" *ngIf="tableData">
+    <table>
+        <tbody data-function="board">
+            <tr *ngFor="let row of tableData ; let i = index">
+                <td *ngFor="let column of row; let j = index" (click)="tryIng(i,j)">
+                    <img id="x"*ngIf="tableData && !treasure && column != -1 || !treasure && column == +1 || treasure && column == +1 || treasure && column == undefined"
+                        src="{{x}}" alt="x">
+                    <img *ngIf="!treasure && column == -1 || treasure && column == -1" src="{{skull}}" alt="skull">
+                    <img *ngIf="treasure && column == 0 " src="{{chest}}" alt="chest">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
