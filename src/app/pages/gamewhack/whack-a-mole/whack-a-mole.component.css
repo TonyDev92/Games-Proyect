@@ -1,0 +1,66 @@
+.controller {
+  display: flex;
+  background-image: url(../../../../assets/exercise-2/pokemon-fondo-de-pantalla-1366x7.png);
+  background-position: bottom;
+  flex-direction: column;
+  background-size: contain;
+  align-items: center;
+  color: white;
+  height: auto;
+  font-family: "Inspiration", cursive;
+}
+.controller__in {
+  font-size: 50px;
+  text-shadow: 0 0 5px #FC77FF, 0 0 10px #FC77FF, 0 0 40px #FC77FF, 0 0 60px #FC77FF;
+}
+.controller__in--a {
+  text-shadow: 0 0 5px #FC77FF, 0 0 10px #FC77FF, 0 0 40px #FC77FF, 0 0 60px #FC77FF;
+}
+.controller__in--b {
+  color: #261851;
+  font-family: "Inspiration", cursive;
+  border: none;
+  width: 100px;
+  height: auto;
+  margin: 1rem;
+  font-size: xx-large;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #229CEC), to(#261851));
+}
+.controller__in--b:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #FC77FF), to(#261851));
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-image: url(../../../../assets/exercise-2/jC6XMu.png);
+}
+
+.b-square {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+.b-square img {
+  width: 200px;
+  height: 115px;
+}
+
+.b-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 618px;
+  height: 618px;
+}
+
+.b-mole {
+  width: 200px;
+  height: 250px;
+}/*# sourceMappingURL=whack-a-mole.component.css.map */

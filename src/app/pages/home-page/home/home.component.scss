@@ -1,0 +1,40 @@
+.contain{
+    background-image: url(../../../../assets/fallout.png);
+    background-size: cover;
+    background-position:initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vw;
+    &__inside{
+        margin: 1rem;
+        border: 2px solid #8FFF91;
+        background-image: url(../../../../assets/canva-purple-neon-galaxy-gaming.png);
+        width: 300px;
+        height: 300px;
+        border-radius: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &--t{
+            font-family:'Inspiration', cursive;
+            text-align: center;
+            color:#F87AFF;
+            text-decoration: none;
+            font-size: 40px;
+            text-align: left;
+            text-shadow:0 0 5px #8FFF91,
+                    0 0 10px #8FFF91,
+                    0 0 40px #8FFF91,
+                    0 0 60px #8FFF91;
+        }
+        &--v{
+            border-radius: 10%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+}

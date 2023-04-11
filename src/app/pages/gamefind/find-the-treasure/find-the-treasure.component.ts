@@ -19,14 +19,7 @@ export class FindTheTreasureComponent implements OnInit{
     tableData: any[][] = []; //Este array esta devolviendo varios items undefined
     arrImg: any[][] = [[this.chest, this.x,this.skull] , [this.treasure, this.x, this.chest]];
     
-    randonNum(){
-      
-      const randomRow = Math.floor(Math.random() * this.maxFiles); //Aquí voy a generar las coordenadas aleatorias
-      const randomCol = Math.floor(Math.random() * this.maxColumns);
-      console.log(`la posición del tesoro es ${randomRow} & ${randomCol}`);
-      return [randomRow][randomCol];
-    }
-    nuevaPosicion = this.randonNum();
+
     tryIng(x: number, y: number){                           //Con esta función recojemos las coordenadas del click
         if(this.tableData[x][y] == this.treasure){          //Se comprueba que sean iguales a las del tesoro 
           this.treasure = true
@@ -55,13 +48,6 @@ export class FindTheTreasureComponent implements OnInit{
         
         
     }
-    // changeImage(x:number, y: number){
-    //     if(this.arrImg[x][y] === this.x){
-    //       this.imgToChange = this.skull
-    //       console.log(x, y);
-          
-    //     }
-    // } 
       start(){
       this.tableData = Array.from({ length: this.maxFiles },  () =>
       Array.from({ length: this.maxColumns})); 

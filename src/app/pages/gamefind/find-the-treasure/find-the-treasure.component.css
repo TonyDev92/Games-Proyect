@@ -1,0 +1,67 @@
+.controlpanel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inspiration", cursive;
+  font-size: xx-large;
+  color: #261851;
+  height: auto;
+  background-repeat: repeat;
+  background-image: url(../../../../assets/table.png);
+  background-size: contain;
+  background-position: center;
+  text-shadow: 0 0 5px #FC77FF, 0 0 10px #FC77FF, 0 0 40px #FC77FF, 0 0 60px #FC77FF;
+}
+.controlpanel__info {
+  text-align: center;
+  height: 20px;
+  border-radius: 10px;
+  width: 200px;
+  font-family: cursive;
+  background-color: #229CEC;
+  border-style: ridge;
+  border-color: #261851;
+}
+.controlpanel__start {
+  color: #EDE755;
+  background-color: #261851;
+  font-family: "Inspiration", cursive;
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin: 1rem;
+  font-size: smaller;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #229CEC), to(#261851));
+}
+.controlpanel__reset {
+  color: #EDE755;
+  text-align: center;
+  font-family: "Inspiration", cursive;
+  border: none;
+  width: 100px;
+  margin: 1rem;
+  height: 30px;
+  font-size: smaller;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #229CEC), to(#261851));
+}
+.controlpanel__start:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #FC77FF), to(#261851));
+}
+.controlpanel__reset:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #FC77FF), to(#261851));
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../assets/CSf3Jp.png);
+}
+
+#x {
+  max-width: 100px;
+}/*# sourceMappingURL=find-the-treasure.component.css.map */

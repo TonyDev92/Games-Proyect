@@ -1,0 +1,28 @@
+<div class="controller">
+    <h1 class="controller__in">Whack a mole!</h1>
+
+    <h2 class="controller__in--a">Your score:</h2>
+    <h2 class="controller__in--a" data-function="score">{{score}}</h2>
+
+    <h2 class="controller__in--a">Seconds left:</h2>
+    <h2 class="controller__in--a"data-function="time-left">{{timer}}</h2>
+    <button type="submit" class="controller__in--b" (click)="init()">Start</button>
+</div>
+<div class="main">
+    <div class="b-grid">
+        <table>
+            <tbody class="b-grid" data-function="board">
+                <tr *ngFor="let row of table; let i = index">
+                    <td *ngFor="let column of row; let j = index">
+                        <div class="b-square">
+                            <img *ngIf="!strike && column != -1 || !strike && column == +1 || strike && column == +1 || strike && column == undefined || !strike && column == 0 || strike && column == -1 || !strike && column == -1"
+                                src="{{whack}}" alt="whack">
+                            <img *ngIf="strike && column == 0" class="b-mole" src="{{mole}}" alt="mole"
+                                (click)="setScore(i,j)">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

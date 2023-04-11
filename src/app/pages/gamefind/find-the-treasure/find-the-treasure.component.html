@@ -2,12 +2,11 @@
 
 <div class="controlpanel">
     <h1>Attemps: <span data-function="attempts">{{attemps}}</span></h1>
-    <input type="number" placeholder="Insert Num of files" [(ngModel)]="maxFiles">
-    <input type="number" placeholder="Insert Num of Columns" [(ngModel)]="maxColumns">
+    <input class="controlpanel__info"type="number" placeholder="Insert Num of files" [(ngModel)]="maxFiles">
+    <input class="controlpanel__info"type="number" placeholder="Insert Num of Columns" [(ngModel)]="maxColumns">
     <button class="controlpanel__start"(click)="start()">Start</button>
     <button class="controlpanel__reset"(click)="reset()">Reset</button>
 </div>    
-   
     <div class="game" *ngIf="tableData">
     <table>
         <tbody data-function="board">

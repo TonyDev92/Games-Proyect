@@ -1,0 +1,65 @@
+.hdr {
+  background-image: url(../../../assets/canva-neon-purple-futuristic-col.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+}
+.hdr__nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.hdr__nav--a {
+  font-family: "Inspiration", cursive;
+  color: #F87AFF;
+  text-decoration: none;
+  font-size: 50px;
+  text-align: left;
+  margin: 1rem;
+  text-shadow: 0 0 5px #8FFF91, 0 0 10px #8FFF91, 0 0 40px #8FFF91, 0 0 60px #8FFF91;
+}
+.hdr__nav--b {
+  font-family: "Inspiration", cursive;
+  color: #F87AFF;
+  text-decoration: none;
+  font-size: 50px;
+  text-align: left;
+  margin: 1rem;
+  text-shadow: 0 0 5px #8FFF91, 0 0 10px #8FFF91, 0 0 40px #8FFF91, 0 0 60px #8FFF91;
+}
+.hdr__nav--c {
+  font-family: "Inspiration", cursive;
+  color: #F87AFF;
+  text-decoration: none;
+  font-size: 50px;
+  text-align: left;
+  margin: 1rem;
+  text-shadow: 0 0 5px #8FFF91, 0 0 10px #8FFF91, 0 0 40px #8FFF91, 0 0 60px #8FFF91;
+}
+.hdr__nav--a:focus {
+  text-align: center;
+  width: 10%;
+  height: auto;
+  background-color: #8FFF91;
+  opacity: 30%;
+  border-radius: 20px;
+}
+.hdr__nav--b:focus {
+  width: 270px;
+  height: auto;
+  text-align: center;
+  background-color: #8FFF91;
+  opacity: 30%;
+  border-radius: 20px;
+}
+.hdr__nav--c:focus {
+  width: 250px;
+  height: auto;
+  text-align: center;
+  background-color: #8FFF91;
+  opacity: 30%;
+  border-radius: 20px;
+}/*# sourceMappingURL=header.component.css.map */

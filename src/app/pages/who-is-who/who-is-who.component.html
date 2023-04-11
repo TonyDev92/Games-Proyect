@@ -1,0 +1,18 @@
+<body>
+    <div class="contain">
+        <h2 class="b-clues">Clues: <span data-function="clueCount">0</span></h2>
+        <div data-function="boardGame" *ngFor="let person of persons" class="b-board-game">
+            <img src="{{person.img}}" alt="">
+        </div>
+    </div>
+    <div data-function="questions" class="b-questions">
+    <div  *ngFor="let question of questionsType">
+        <h3>{{question.title}}</h3>
+        <div  *ngFor="let response of question.questions">
+            
+            <button>{{response}}</button>
+     
+        </div>
+    </div>
+    </div>
+</body>
